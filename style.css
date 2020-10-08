@@ -4,11 +4,10 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-}
-
-body {
     font-family: 'Times New Roman', Times, serif;
 }
+
+/*------------------------- Navigation -------------------------*/
 
 nav {
     background: #548687;  /* #E1D89F, #EF8354, #564154, #548687, #8D99AE */
@@ -40,7 +39,7 @@ nav ul li a {
     border-radius: 20px;
 }
 
-a.active, a:hover {
+nav ul li a.active, nav ul li a:hover {
     background: #F2992D;
     transition: 0.5s;
 }
@@ -59,6 +58,8 @@ a.active, a:hover {
     display: none;
 
 }
+
+/* ------------------------ Responsive Navigation ----------------------*/
 
 @media (max-width: 952px) {
     label.logo {
@@ -100,7 +101,7 @@ a.active, a:hover {
         font-size: 20px;
     }
 
-    a:hover, a.active {
+    nav ul li a:hover, nav ul li a.active {
         background: none;
         color: #F2992D;
     }
@@ -110,8 +111,323 @@ a.active, a:hover {
     }
 }
 
-section {
+/* ------------------- Animation with doors --------------------*/
+.doors {
+    width: 100%; 
+    height: 100vh; 
+    overflow: hidden; 
+}
+    
+input[type=checkbox] {
+    position: absolute; 
+    cursor: pointer; 
+    width: 100%; 
+    height: 100%; 
+    z-index: 100; 
+    opacity: 0; 
+}
+  
+input[type=checkbox]:checked ~ div.doors-panel--left {
+    transform: translateX(0);
+}
+          
+input[type=checkbox]:checked ~ div.doors-panel--right {
+    transform: translateX(0);
+}
+        
+.doors-panel1 {
+    width: 50%; 
+    height: 100vh; 
+    float: left; 
+    position: relative; 
+    z-index: 2; 
+    transition: all 1s ease-out; 
+}
+
+.doors-panel1 img{
+    width: 630px;
+    height: 100vh;
+    opacity: 0.9;
+}
+
+.doors-panel2 img {
+    width: 640px;
+    height: 100vh;
+    opacity: 0.9;
+}
+
+.doors-panel1 h2 {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    transform: translate(365px, -500px);
+    font-size: 30px;
+    color: #397071;
+}
+
+.doors-panel2 h2 {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    transform: translate(10px, -500px);
+    font-size: 30px;
+    color: #397071;
+}
+
+.doors-panel2 {
+    width: 50%; 
+    height: 100vh; 
+    float: left; 
+    position: relative; 
+    z-index: 2; 
+    transition: all 1s ease-out; 
+}
+  
+.doors-panel--left {
+    transform: translateX(-100%);
+}
+  
+.doors-panel--right {
+    transform: translateX(100%);
+}
+    
+.hovedsiden {
+    background: #333;
+    position: absolute; 
+    z-index: 1; 
+    width: 100%;
+    height: 100%;
+}
+ 
+
+.back_pic {
     background: url(/Images/Image1.jpeg) no-repeat;
     background-size: cover;
     height: calc(100vh - 80px);
+    opacity: 0.65;
+    padding: 0px 100px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-bottom: 200px;
 }
+
+.txt-box {
+    position: relative;
+    max-width: 700px;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.txt-box h1{
+    -webkit-text-stroke: 1px black;
+    font-size: 50px;
+    font-weight: bold;
+    color: #F2992D;
+}
+
+.txt-box h2{
+font-family: 'Times New Roman', Times, red serif;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.txt-box p{
+    margin-top: 15px;
+    font-size: 16px;
+    color: black;
+}
+
+/* ---------------------- Solution ----------------------*/
+
+.solution {
+    text-align: center;
+    background-color: #548687;
+    padding-bottom: 20px;
+    border-bottom: 4px solid;
+
+}
+
+.link_til_solution {
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    margin: 50px;
+}
+
+h1{
+    font-size: 20px;
+    display: inline;
+    border-bottom: 4px solid;
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+
+.tap-card img {
+    float: right;
+    width: 40%;
+    transform: translateY(10%);
+}
+
+.txt {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    margin: 40px 50px;
+    line-height: 25px;
+    padding-right: 500px;
+}
+
+.benefits img {
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+    width: 80%;
+}
+
+.summary {
+    margin-top: 40px;
+    padding-bottom: 50px;
+}
+
+.summary h2 {
+    font-size: 20px;
+    display: inline;
+    border-bottom: 4px solid;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+
+.summary ul {
+    font-size: 20px;
+    margin-top: 30px;
+    line-height: 30px;
+}
+
+/* ----------- Our Team ----------------*/
+
+.our_team {
+    text-align: center;
+    margin-top: 750px;
+}
+
+.inner-width {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+    overflow: hidden;
+}
+
+.person-image {
+    float: left;
+    width: calc(100% / 3);
+    overflow: hidden;
+    padding: 40px 0;
+}
+
+.person-image img {
+    width: 150px;
+    height: 150px;
+}
+
+.persons-name {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.contact-info {
+    margin-top: 10px;
+}
+
+.contact-info a {
+    color: black;
+    font-size: 20px;
+}
+
+/*------------------------------Footer-------------------------*/
+
+footer {
+    padding: 10px 0;
+    background: #548687;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+.footer-container img {
+    height: 200px;
+    width: 331px;
+    margin-left: 50px;
+}
+
+.s-media {
+    margin: 30px 150px;
+    transform: translateY(-80px);
+}
+
+.s-media a{
+   font-size: 20px;
+   margin-right: 50px;
+   color: #F2992D;
+}
+
+.right-column p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.newsletter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.text-box {
+    flex: 1;
+    margin-top: -10px;
+    padding: 14px 30px;
+    font-size: 16px;
+    color: #F2992D;
+    border: none;
+    border-radius: 25px;
+    font-weight: 500px;
+    outline: none;
+    min-width: 260px;
+}
+
+.button {
+    margin-left: 10px;
+    margin-top: -10px;
+    padding: 14px 30px;
+    font-size: 16px;
+    color: #548687;
+    background: #F2992D; 
+    border: none;
+    border-radius: 30px;
+    font-weight: 700px;
+    outline: none;
+}
+
+.button:hover {
+    opacity: 0.7;
+}
+
+
+    
+
+  
+
+  
