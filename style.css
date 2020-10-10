@@ -204,7 +204,7 @@ input[type=checkbox]:checked ~ div.doors-panel--right {
     background: url(Images/Image1.jpeg) no-repeat;
     background-size: cover;
     height: calc(100vh - 80px);
-    opacity: 0.3;
+    opacity: 0.9;
     padding: 0px 100px;
     height: 100vh;
     display: flex;
