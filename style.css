@@ -204,7 +204,7 @@ input[type=checkbox]:checked ~ div.doors-panel--right {
     background: url(Images/Image1.jpeg) no-repeat;
     background-size: cover;
     height: calc(100vh - 80px);
-    opacity: 0.9;
+    opacity: 0.8;
     padding: 0px 100px;
     height: 100vh;
     display: flex;
@@ -216,7 +216,7 @@ input[type=checkbox]:checked ~ div.doors-panel--right {
     position: relative;
     max-width: 700px;
     padding: 50px;
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.85);
 }
 
 .txt-box h1{
