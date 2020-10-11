@@ -384,8 +384,7 @@ footer {
 }
 
 .right-column p {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 25px;
 }
 
 .newsletter {
@@ -397,7 +396,7 @@ footer {
 
 .text-box {
     flex: 1;
-    margin-top: -10px;
+    margin-top: 15px;
     padding: 14px 30px;
     font-size: 16px;
     color: #F2992D;
@@ -410,7 +409,7 @@ footer {
 
 .button {
     margin-left: 10px;
-    margin-top: -10px;
+    margin-top: 12px;
     padding: 14px 30px;
     font-size: 16px;
     color: #548687;
@@ -423,6 +422,12 @@ footer {
 
 .button:hover {
     opacity: 0.7;
+}
+
+.copyright p {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 16px;
 }
 
 
