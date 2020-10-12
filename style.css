@@ -111,85 +111,7 @@ nav ul li a.active, nav ul li a:hover {
     }
 }
 
-/* ------------------- Animation with doors --------------------*/
-.doors {
-    width: 100%; 
-    height: 100vh; 
-    overflow: hidden; 
-}
-    
-input[type=checkbox] {
-    position: absolute; 
-    cursor: pointer; 
-    width: 100%; 
-    height: 100%; 
-    z-index: 100; 
-    opacity: 0; 
-}
-  
-input[type=checkbox]:checked ~ div.doors-panel--left {
-    transform: translateX(0);
-}
-          
-input[type=checkbox]:checked ~ div.doors-panel--right {
-    transform: translateX(0);
-}
-        
-.doors-panel1 {
-    width: 50%; 
-    height: 100vh; 
-    float: left; 
-    position: relative; 
-    z-index: 2; 
-    transition: all 1s ease-out; 
-}
-
-.doors-panel1 img{
-    width: 630px;
-    height: 100vh;
-    opacity: 0.9;
-}
-
-.doors-panel2 img {
-    width: 640px;
-    height: 100vh;
-    opacity: 0.9;
-}
-
-.doors-panel1 h2 {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
-    transform: translate(365px, -500px);
-    font-size: 30px;
-    color: #397071;
-}
-
-.doors-panel2 h2 {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
-    transform: translate(10px, -500px);
-    font-size: 30px;
-    color: #397071;
-}
-
-.doors-panel2 {
-    width: 50%; 
-    height: 100vh; 
-    float: left; 
-    position: relative; 
-    z-index: 2; 
-    transition: all 1s ease-out; 
-}
-  
-.doors-panel--left {
-    transform: translateX(-100%);
-}
-  
-.doors-panel--right {
-    transform: translateX(100%);
-}
+/* ------------------- Solution --------------------*/
     
 .hovedsiden {
     background: #333;
@@ -239,8 +161,6 @@ font-family: 'Times New Roman', Times, red serif;
     font-size: 16px;
     color: black;
 }
-
-/* ---------------------- Solution ----------------------*/
 
 .solution {
     text-align: center;
@@ -305,7 +225,7 @@ h1{
 
 .our_team {
     text-align: center;
-    margin-top: 750px;
+    margin-top: 1400px;
 }
 
 .inner-width {
