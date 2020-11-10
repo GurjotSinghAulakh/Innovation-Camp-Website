@@ -2,4 +2,4 @@
 
 Link:
 
-https://s351873.github.io/Innovation-Camp-Website/
+https://gurjotsinghaulakh.github.io/Innovation-Camp-Website/
